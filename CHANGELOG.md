@@ -11,6 +11,9 @@
 ### Fixes
 * none so far
 
+## v0.5.4 (2018-01-12)
+### Fixes
+* fixed build failure on Mac
 
 ## v0.5.0 (2017-10-22)
 ### Breaking
@@ -26,7 +29,7 @@
   * NOTE: no library-level dependency on Tendermint core
 * networking is turned off for ethereum node
   * NOTE: allows running of go-ethereum and ethermint side-by-side
-* new `unsafe_reset_all` command to reset all initialisation files 
+* new `unsafe_reset_all` command to reset all initialisation files
 
 ### Improvements
 * semver guarantees to all exported APIs
