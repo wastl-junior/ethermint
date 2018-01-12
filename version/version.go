@@ -7,18 +7,18 @@ const Major = 0
 const Minor = 5
 
 // Fix version component of the current release
-const Fix = 3
+const Fix = 4
 
 var (
 	// Version is the full version string
-	Version = "0.5.3"
+	Version = "0.5.4"
 
-	// GitCommit is set with --ldflags "-X main.gitCommit=$(git rev-parse HEAD)"
+	// GitCommit is set with --ldflags "-X main.gitCommit=$(git rev-parse --short HEAD)"
 	GitCommit string
 )
 
 func init() {
-	if GitCommit != "" && len(GitCommit) >= 8 {
-		Version += "-" + GitCommit[:8]
+	if GitCommit != "" {
+		Version += "-" + GitCommit
 	}
 }
