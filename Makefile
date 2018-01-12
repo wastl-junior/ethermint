@@ -6,7 +6,7 @@ PACKAGES := $(shell glide novendor)
 
 BUILD_TAGS? := ethermint
 
-VERSION_TAG := 0.5.3
+VERSION_TAG := 0.5.4
 
 BUILD_FLAGS = -ldflags "-X github.com/tendermint/ethermint/version.GitCommit=`git rev-parse --short HEAD`"
 
