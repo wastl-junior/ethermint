@@ -1,4 +1,4 @@
-package: github.com/tendermint/ethermint
+package: github.com/wastl-junior/ethermint
 import:
 - package: github.com/tendermint/tendermint
   version: 0.10.x

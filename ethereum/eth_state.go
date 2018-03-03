@@ -17,7 +17,7 @@ import (
 
 	abciTypes "github.com/tendermint/abci/types"
 
-	emtTypes "github.com/tendermint/ethermint/types"
+	emtTypes "github.com/wastl-junior/ethermint/types"
 )
 
 //----------------------------------------------------------------------

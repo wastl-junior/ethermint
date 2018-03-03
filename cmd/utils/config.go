@@ -11,7 +11,7 @@ import (
 	"github.com/ethereum/go-ethereum/node"
 	"github.com/ethereum/go-ethereum/params"
 
-	"github.com/tendermint/ethermint/ethereum"
+	"github.com/wastl-junior/ethermint/ethereum"
 
 	rpcClient "github.com/tendermint/tendermint/rpc/lib/client"
 )

@@ -17,7 +17,7 @@ import (
 
 	rpcClient "github.com/tendermint/tendermint/rpc/lib/client"
 
-	emtTypes "github.com/tendermint/ethermint/types"
+	emtTypes "github.com/wastl-junior/ethermint/types"
 )
 
 //----------------------------------------------------------------------

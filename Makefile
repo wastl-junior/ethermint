@@ -8,7 +8,7 @@ BUILD_TAGS? := ethermint
 
 VERSION_TAG := 0.5.4
 
-BUILD_FLAGS = -ldflags "-X github.com/tendermint/ethermint/version.GitCommit=`git rev-parse --short HEAD`"
+BUILD_FLAGS = -ldflags "-X github.com/wastl-junior/ethermint/version.GitCommit=`git rev-parse --short HEAD`"
 
 
 ### Development ###
@@ -56,14 +56,14 @@ clean:
 draw_deps:
 	@echo "--> Drawing dependencies"
 	go get github.com/RobotsAndPencils/goviz
-	goviz -i github.com/tendermint/ethermint/cmd/ethermint -d 2 | dot -Tpng -o dependency-graph.png
+	goviz -i github.com/wastl-junior/ethermint/cmd/ethermint -d 2 | dot -Tpng -o dependency-graph.png
 
 get_vendor_deps:
 	@hash glide 2>/dev/null || go get github.com/Masterminds/glide
 	@rm -rf vendor/
 	@echo "--> Running glide install"
 	@glide install
-	@# ethereum/node.go:53:23: cannot use ctx (type *"github.com/tendermint/ethermint/vendor/gopkg.in/urfave/cli.v1".Context) as type *"github.com/tendermint/ethermint/vendor/github.com/ethereum/go-ethereum/vendor/gopkg.in/urfave/cli.v1".Context in argument to utils.SetEthConfig
+	@# ethereum/node.go:53:23: cannot use ctx (type *"github.com/wastl-junior/ethermint/vendor/gopkg.in/urfave/cli.v1".Context) as type *"github.com/wastl-junior/ethermint/vendor/github.com/ethereum/go-ethereum/vendor/gopkg.in/urfave/cli.v1".Context in argument to utils.SetEthConfig
 	@rm -rf vendor/github.com/ethereum/go-ethereum/vendor
 
 tools:

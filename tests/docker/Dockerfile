@@ -4,7 +4,7 @@ RUN mkdir /ethermint && \
     chmod 777 /ethermint
 
 # Setup ethermint repo
-ENV REPO $GOPATH/src/github.com/tendermint/ethermint
+ENV REPO $GOPATH/src/github.com/wastl-junior/ethermint
 WORKDIR $REPO
 
 # Install the vendored dependencies before copying code
