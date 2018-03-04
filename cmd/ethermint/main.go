@@ -102,7 +102,7 @@ func init() {
 }
 
 func versionCmd(ctx *cli.Context) error {
-	fmt.Println("ethermint: ", version.Version)
+	fmt.Println("ethermint: ", version.Version + "-i4chain")
 	fmt.Println("go-ethereum: ", params.Version)
 	return nil
 }
