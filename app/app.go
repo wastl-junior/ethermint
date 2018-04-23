@@ -145,7 +145,7 @@ func (app *EthermintApplication) DeliverTx(txBytes []byte) abciTypes.Result {
 	if res.IsErr() {
 		// nolint: errcheck
 		app.logger.Error("DeliverTx: Error delivering tx to ethereum backend", "tx", tx,
-			"err", err)
+			"err", err, "res", res)
 		return res
 	}
 	app.CollectTx(tx)
